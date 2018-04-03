@@ -10,22 +10,18 @@ import React from 'react';
 class StorePicker extends React.Component {
 // every class needs at least one method: render
 	render() {
-		// use className not class
-		// emmet wesbos react
-		// toggling comments in jsx?
 		// need space between return and ()
-		// use the () for formatting
-		 // from render method, can only return one element including comments (no siblings) without react.fragment tag (or import react, {fragment} to use fragment w out the react.)
+		// from render method, can only return one element including comments (no siblings) without react.fragment tag (or import react, {fragment} to use fragment w out the react.)
 		return (
 			<React.Fragment>
-				<p>fish</p>
 				{/* comment */}
 				<form className="store-selector">
-					<h2>enter a store</h2>
-					<input  type="submit" required placeholder="test"/>
+					<h2>please enter a store</h2>
+					<input type="text" required placeholder="Store Name"/>
+					<button type="submit">Visit Store >></button>
 				</form>
 			</React.Fragment>
-		)
+		);
 	}
 }
 

@@ -5,11 +5,13 @@ import React from 'react';
 import { render } from 'react-dom';
 // have to import component from path to use it (.js not needed)
 import StorePicker from './components/StorePicker';
+// import stylesheet
+import './css/style.css';
 
-
+import App from './components/App';
 //////////////////////
 // mounting app to the page
 //////////////////////
 
 // what to render, where to render it (i.e. empty div w ID of 'main')
-render(<StorePicker />, document.querySelector('#main'));
+render(<App />, document.querySelector('#main'));
