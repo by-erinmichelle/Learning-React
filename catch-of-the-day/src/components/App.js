@@ -1,6 +1,9 @@
 import React from "react";
 // only need to import component where its needed
 import Header from "./Header";
+import Inventory from "./Inventory";
+import Order from "./Order";
+
 
 class App extends React.Component {
 	render() {
@@ -8,11 +11,10 @@ class App extends React.Component {
 			<div className="catch-of-the-day">
 				<div className="menu">
 				{/*bringing in another component*/}
-					<Header />
+					<Header tagline="fresh seafood" age={500} cool="true"/>
 				</div>
-{/*				<Inventory />
-				<Order />*/}
-
+				<Order />
+				<Inventory />
 			</div>
 		)
 	}
