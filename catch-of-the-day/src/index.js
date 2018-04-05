@@ -7,7 +7,7 @@ import { render } from 'react-dom';
 import StorePicker from './components/StorePicker';
 // import stylesheet
 import './css/style.css';
-
+ 
 import App from './components/App';
 //////////////////////
 // mounting app to the page
