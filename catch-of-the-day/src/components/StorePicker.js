@@ -1,6 +1,6 @@
 // always import react into components
 import React from 'react';
-
+import { getFunName } from '../helpers';
 //////////////////////
 // creating a class
 //////////////////////
@@ -17,7 +17,7 @@ class StorePicker extends React.Component {
 				{/* comment */}
 				<form className="store-selector">
 					<h2>please enter a store</h2>
-					<input type="text" required placeholder="Store Name"/>
+					<input type="text" required placeholder="Store Name" defaultValue={getFunName()}/>
 					<button type="submit">Visit Store >></button>
 				</form>
 			</React.Fragment>

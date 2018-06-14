@@ -8,8 +8,8 @@ import { render } from 'react-dom';
 // import stylesheet
 import './css/style.css';
 import Router from "./components/Router";
-
 // import App from './components/App';
+
 //////////////////////
 // mounting app to the page
 //////////////////////
