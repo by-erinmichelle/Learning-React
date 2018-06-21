@@ -3,8 +3,10 @@ import React from "react";
 import Header from "./Header";
 import Inventory from "./Inventory";
 import Order from "./Order";
+import sampleFishes from "../sample-fishes";
 
 
+// any custom function that needs to update state, needs to live in the same component that the state lives
 class App extends React.Component {
 	state = {
 		// empty objects
@@ -24,6 +26,9 @@ class App extends React.Component {
 			fishes
 		});
 	};
+	loadSampleFishes = () => {
+		this.setState({ fishes: sampleFishes});
+	};
 	render() {
 		return (
 			<div className="catch-of-the-day">
@@ -32,7 +37,8 @@ class App extends React.Component {
 					<Header tagline="fresh seafood" age={500} cool="true"/>
 				</div>
 				<Order />
-				<Inventory addFish={this.addFish} />
+				<Inventory addFish={this.addFish}
+				loadSampleFishes={this.loadSampleFishes} />
 			</div>
 		)
 	}
