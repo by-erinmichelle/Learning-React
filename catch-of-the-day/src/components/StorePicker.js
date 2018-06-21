@@ -24,8 +24,9 @@ class StorePicker extends React.Component {
 		// 1. stop form from submitting
 		event.preventDefault();
 		// 2. get the text from that input. dont touch the dom!
-		console.log(this);
-		// 3. change the page to store/whatever they need
+		const storeName = this.myInput.value.value;
+		// 3. change the page to store/whatever they need. then in router.js this will display the right component!
+		this.props.history.push(`/store/${storeName}`);
 	}
 // every class needs at least one method: render
 	render() {
