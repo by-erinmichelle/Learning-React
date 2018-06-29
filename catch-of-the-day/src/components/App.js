@@ -35,7 +35,7 @@ class App extends React.Component {
 			<div className="catch-of-the-day">
 				<div className="menu">
 				{/*bringing in another component*/}
-					<Header tagline="fresh seafood" age={500} cool="true"/>
+					<Header tagline="fresh cuteness" age={500} cool="true"/>
 					<ul className="fishes">
 						{/*loop through the fishes in regular js*/}
 						{Object.keys(this.state.fishes).map(key => <Fish key={key} details={this.state.fishes[key]} />)}

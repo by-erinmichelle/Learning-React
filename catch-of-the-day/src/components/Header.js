@@ -23,12 +23,12 @@ class Header extends React.Component {
 	render() {
 		return (
 			<header className="top">
-				<h1>Catch
+				<h1>Look
 				<span className="ofThe">
-				<span className="of">Of</span>
-				<span className="the">The</span>
+				<span className="of">at</span>
+				<span className="the">the</span>
 				</span>
-				Day
+				Dogs!
 				</h1>
 				<h3 className="tagline">
 					{/*this is a component instance*/}

@@ -4,7 +4,7 @@ const fishes = {
     name: "Pacific Halibut",
     image: "/images/dog1.jpg",
     desc:
-      "Everyones favorite white fish. We will cut it to the size you need and ship it.",
+      "He has a heart on his nose. 14/10 would protect at all costs.",
     price: 1724,
     status: "available"
   },
@@ -13,7 +13,7 @@ const fishes = {
     name: "Lobster",
     image: "/images/dog2.jpg",
     desc:
-      "These tender, mouth-watering beauties are a fantastic hit at any dinner party.",
+      "She would like to remind you she did not evolve for this climate. 13/10 would buy several misting fans for.",
     price: 3200,
     status: "available"
   },
@@ -22,7 +22,7 @@ const fishes = {
     name: "Sea Scallops",
     image: "/images/dog3.jpg",
     desc:
-      "Big, sweet and tender. True dry-pack scallops from the icey waters of Alaska. About 8-10 per pound",
+      "A pupfessional shoe remover. Still 14/10 would pet well.",
     price: 1684,
     status: "unavailable"
   },
@@ -31,7 +31,7 @@ const fishes = {
     name: "Mahi Mahi",
     image: "/images/dog4.jpg",
     desc:
-      "Lean flesh with a mild, sweet flavor profile, moderately firm texture and large, moist flakes. ",
+      "He visits the flowers as often as he can. They make him happy. 13/10 a self-care legend. ",
     price: 1129,
     status: "available"
   },
@@ -40,7 +40,7 @@ const fishes = {
     name: "King Crab",
     image: "/images/dog5.jpg",
     desc:
-      "Crack these open and enjoy them plain or with one of our cocktail sauces",
+      "Today, she was crowned Flower Queen. Plans to rule benevolently. 12/10 would happily serve.",
     price: 4234,
     status: "available"
   },
@@ -49,7 +49,7 @@ const fishes = {
     name: "Atlantic Salmon",
     image: "/images/dog6.jpg",
     desc:
-      "This flaky, oily salmon is truly the king of the sea. Bake it, grill it, broil it...as good as it gets!",
+      "She just realized she forgot to bring a bucket to the beach. Wanted to collect seashells. 13/10 would hold them for her.",
     price: 1453,
     status: "available"
   },
@@ -57,7 +57,7 @@ const fishes = {
   fish7: {
     name: "Oysters",
     image: "/images/dog7.jpg",
-    desc: "A soft plump oyster with a sweet salty flavor and a clean finish.",
+    desc: "It’s his first time trying frozen watermelon. Brain freeze inevitable. 13/10 would blissfully boop.",
     price: 2543,
     status: "available"
   },
@@ -66,7 +66,7 @@ const fishes = {
     name: "Mussels",
     image: "/images/dog8.jpg",
     desc:
-      "The best mussels from the Pacific Northwest with a full-flavored and complex taste.",
+      "He graduated beginner’s training class today. 14/10 would congratulate.",
     price: 425,
     status: "available"
   },
@@ -75,7 +75,7 @@ const fishes = {
     name: "Jumbo Prawns",
     image: "/images/dog9.jpg",
     desc:
-      "With 21-25 two bite prawns in each pound, these sweet morsels are perfect for shish-kabobs.",
+      "He pouts until he gets to swing. 13/10 would push forever.",
     price: 2250,
     status: "available"
   }

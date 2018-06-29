@@ -25,17 +25,16 @@ imageRef = React.createRef();
 	render() {
 		return (
 			<div className="AddFishForm">
-				<p>works</p>
 				<form className="fish-edit" onSubmit={this.createFish}>
 					<input name="name" ref={this.nameRef} type="text" placeholder="name" />
 					<input name="price" ref={this.priceRef} type="text" placeholder="price" />
 					<select name="status" ref={this.statusRef} placeholder="status"> 
-						<option value="available">Fresh!</option>
-						<option value="unavailable">Sold out!</option>
+						<option value="available">Heckin Good!</option>
+						<option value="unavailable">Heckin out!</option>
 					</select>
 					<textarea name="desc" ref={this.descRef} placeholder="desc" />
 					<input name="image" ref={this.imageRef} type="text" placeholder="image" />
-					<button type="submit">+ Add Fish</button>
+					<button type="submit">+ Add Good Boy</button>
 				</form>
 			</div>
 		);
