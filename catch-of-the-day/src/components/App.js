@@ -4,7 +4,8 @@ import Header from "./Header";
 import Inventory from "./Inventory";
 import Order from "./Order";
 import sampleFishes from "../sample-fishes";
-
+import Fish from "./Fish";
+// /////// jsx doesnt have looping or if statements, you have to use regular js
 
 // any custom function that needs to update state, needs to live in the same component that the state lives
 class App extends React.Component {
@@ -35,6 +36,10 @@ class App extends React.Component {
 				<div className="menu">
 				{/*bringing in another component*/}
 					<Header tagline="fresh seafood" age={500} cool="true"/>
+					<ul className="fishes">
+						{/*loop through the fishes in regular js*/}
+						{Object.keys(this.state.fishes).map(key => <Fish key={key} details={this.state.fishes[key]} />)}
+					</ul>
 				</div>
 				<Order />
 				<Inventory addFish={this.addFish}
