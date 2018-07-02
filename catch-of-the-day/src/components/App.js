@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 // only need to import component where its needed
 import Header from "./Header";
 import Inventory from "./Inventory";
@@ -14,6 +15,10 @@ class App extends React.Component {
 		// empty objects
 		fishes: {},
 		order: {}
+	};
+
+	static propTypes = {
+		match: PropTypes.object
 	};
 	// similar to document.ready in jquery
 	componentDidMount() {

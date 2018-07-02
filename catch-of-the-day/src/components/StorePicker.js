@@ -1,5 +1,6 @@
 // always import react into components
 import React from 'react';
+import PropTypes from 'prop-types';
 import { getFunName } from '../helpers';
 //////////////////////
 // creating a class
@@ -8,6 +9,9 @@ import { getFunName } from '../helpers';
 // best practice for caps
 // or written class NameHere extends Component
 class StorePicker extends React.Component {
+	static propTypes = {
+		history: PropTypes.object
+	};
 	// handleClick() {
 	// 	alert('hey!');
 	// }

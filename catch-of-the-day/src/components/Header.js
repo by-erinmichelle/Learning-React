@@ -1,6 +1,7 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-
+// stateless functional component
 // const Header = (props) => (
 // 	// implicit return
 // 			<header className="top">
@@ -37,6 +38,10 @@ class Header extends React.Component {
 			</header>
 		)
 	}
+}
+
+Header.propTypes = {
+	tagline: PropTypes.string.isRequired
 }
 
 export default Header;
