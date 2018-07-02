@@ -5,6 +5,7 @@ import Inventory from "./Inventory";
 import Order from "./Order";
 import sampleFishes from "../sample-fishes";
 import Fish from "./Fish";
+import base from "../base";
 // /////// jsx doesnt have looping or if statements, you have to use regular js
 
 // any custom function that needs to update state, needs to live in the same component that the state lives
@@ -14,6 +15,21 @@ class App extends React.Component {
 		fishes: {},
 		order: {}
 	};
+	// similar to document.ready in jquery
+	componentDidMount() {
+		// path to the store url if you look in react tools
+		const { params } = this.props.match;
+		this.ref = base.syncState(`${params.storeId}/fishes`, {
+			context: this,
+			state: 'fishes'
+		});
+	}
+
+	// tell app to stop listening for events to avoid memory leak
+	componentWillUnmount() {
+		base.removeBinding(this.ref);
+	}
+
 	addFish = fish => {
 		// 1. take a copy of existing state
 		const fishes = {...this.state.fishes};
